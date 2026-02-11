@@ -10,13 +10,13 @@
 
 <body>
     <header>
-        <h2>Estado de ánimo!</h2>
+        <h2>ESTADO DE ANIMO!</h2>
     </header>
     <main>
         <section id="formSection">
-            <form id="form">
+            <form id="formAnimo">
                 <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" minlength="3" placeholder="Escribe aquí tu nombre" required>
+                <input type="text" id="nombre" minlength="3" placeholder="Escribe aquí tu nombre" required />
                 <label for="animo">Elije tu estado de ánimo</label>
                 <select id="animo" required>
                     <option value="NA" hidden selected></option>
@@ -27,11 +27,13 @@
                     <option value="achicopalao">Achicopalao 🫠</option>
                 </select>
                 <button type="submit" class="btnPrimary">Generar</button>
+                <!-- <p id="msg" class="msg" role="status" aria-live="polite"></p> -->
             </form>
         </section>
         <section id="result">
-            <a id="result"></a>
-            <button id="btnReset">Reiniciar</button>
+            <ul id="list">
+            </ul>
+            <button id="btnReset" type="button">Reiniciar</button>
         </section>
     </main>
     <footer>
