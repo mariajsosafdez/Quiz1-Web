@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EXAMEN WEB 1.0</title>
+</head>
+
+<body>
+    <header>
+        <h2>Estado de ánimo!</h2>
+    </header>
+    <main>
+        <section id="formSection">
+            <form id="form">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" minlength="3" placeholder="Escribe aquí tu nombre">
+                <label for="animo">Elije tu estado de ánimo</label>
+                <select id="animo" required>
+                    <option value="feliz">Feliz 😊</option>
+                    <option value="serio">Serio 🫤</option>
+                    <option value="cansado">Cansado 😔</option>
+                    <option value="parchao">Parchao 🗿</option>
+                    <option value="achicopalao">Achicopalao 🫠</option>
+                </select>
+                <button type="submit" class="btnPrimary">Generar</button>
+            </form>
+        </section>
+        <section id="result">
+            <div>
+
+            </div>
+            <button id="btnReset">Reiniciar</button>
+        </section>
+    </main>
+    <footer>
+        Entrega: WEB-01 | Grupo: <span id="group"></span> | Código: <span id="cc"></span>
+    </footer>
+</body>
+
+</html>
